@@ -1,0 +1,58 @@
+Program ini merupakan program untuk proses meminjam dan mengembalikan buku(manga)
+dengan total manga lebih dari 2500 judul dan lebih dari 10.000 volume
+
+variabel : manga_dipinjam 
+variabel : manga_total
+
+print "---------------YOKOSO---------------"
+print "------Ardhana's Manga Library------"
+print "Tempat Peminjaman Segala Macam Manga"
+//Head judul program dan deskripsi singkat
+
+while True:
+    print "Pilih menu:"
+    print "1. Pinjam Manga"
+    print "2. Kembalikan Manga"
+    print "3. Cek Manga yang dipinjam"
+    print "4. Keluar"
+//Menu-menu yang tersedia dalam program
+
+    choice pilihan_menu
+//User diminta memasukkan input dari menu yang tersedia
+
+    if pilihan_menu == 1:
+        if buku_dipinjam < 5:
+            print "Woy WIBU mau pinjam manga apa: "
+            input nama_manga
+//Apabila manga yang ingin dipinjam kurang dari 5 maka user diperbolehkan meminjam
+
+            print "Manga", nama_manga, "di"
+            manga_dipinjam += 1
+        else:
+            print "Dasar Wibu Jangan Kebanyakan Minjem Manga."
+//Apabila manga yang ingin dipinjam lebih dari 5 maka user tidak diperbolehkan meminjam lebih
+
+    if pilihan_menu == 2:
+        if buku_dipinjam > 0:
+            print "Woy WIBU mau balikin manga apa: "
+            input nama_buku
+//User diminta memasukkan judul manga yang ingin dikembalikan
+
+            print "Manga", nama_manga, "berhasil dikembalikan"
+            manga_dipinjam -= 1
+        else:
+            print "Woy WIBU lu gak lagi minjem manga."
+//Program melakukan pengecekan apabila tidak ada manga yang dipinjam maka aka menampilkan output
+
+    if pilihan_menu == 3:
+        print "Woy Wibu lu lagi pinjem", manga_dipinjam, "dari total", manga_total, "manga yang ada."
+//Program akan melakukan pengecekan tentang manga apa yang sedang user pinjam
+
+    if pilihan_menu == 4:
+        print "Woy Wibu jangan lupa dateng ke sini lagi"
+        keluar dari program
+//Program menampilkan pesan
+
+    else:
+        print "Woy Wibu lu salah pilih menu."
+//Program menampilkan pesan apabila user salah menginputkan menu
